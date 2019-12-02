@@ -1,0 +1,6 @@
+.done{
+    color: salmon;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: 20px;
+}
