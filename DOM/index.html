@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom</title>
+    <style>
+        .special{
+        color:blue;    
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li>one</li>
+        <li class="special">two</li>
+        <li>three</li>
+        <li>
+            <ul class="sublist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+    </ul>
+    
+<script src="jquery-3.4.1.min.js"></script>
+
+<script>
+    $(function(){
+       $('li').on("click",function(){
+           if($(this).parent().is('.sublist'))
+           {$(this).hide();}
+
+           
+       });
+    });
+</script>
+
+</body>
+</html>
