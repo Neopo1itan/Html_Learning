@@ -1,0 +1,24 @@
+#orders{
+    padding: 0px;
+    margin:0;
+}
+#orders li{
+   background-color: rgb(157, 157, 157);
+   list-style-type: none;
+   margin: 10px 0px 10px 0px;
+}
+ul li{
+    list-style-type: none;
+    background-color: #efefef;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+ul li .edit{
+    display: none;
+}
+ul li.edit .edit{
+    display: initial;
+}
+ul li.edit .noedit{
+    display: none;
+}
